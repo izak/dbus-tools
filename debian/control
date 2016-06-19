@@ -1,0 +1,14 @@
+Source: dbus-cli
+Maintainer: Izak Burger <isburger@gmail.com>
+Section: admin
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8)
+
+Package: dbus-cli
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-lxml, python-dbus
+Suggests: libplumb2
+Description: A tool to inspect and communicate with dbus
+ dbus-cli provides a command line tool for inspecting and communicating with
+ services on dbus.

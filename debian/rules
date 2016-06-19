@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p debian/tmp/usr/bin
+	install -m 775 dbus debian/tmp/usr/bin/dbus
